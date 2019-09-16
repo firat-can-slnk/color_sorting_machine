@@ -11,8 +11,8 @@ int color_values[3]; // Gemessene Werte
 int color_steps[4] = {1,2,3,4}; // Schritte Rot, Gruen, Blau, Gold
 
 // PIN BELEGUNGEN
-const byte motor1_pins[4] = {7, 5, 8, 6}; // PINS ÜBERPRÜFEN (Wegen Kabeltausch)
-const byte motor2_pins[4] = {11, 9, 12, 10}; // PINS ÜBERPRÜFEN (Wegen Kabeltausch)
+const byte motor1_pins[4] = {7, 5, 8, 6}; // IN3, IN1, IN4, IN2
+const byte motor2_pins[4] = {11, 9, 12, 10}; // L1, L2, L3, L4
 byte motorpins[4];
 
 const byte leds[3] = {4,3,2}; // Red, Green, Blue
