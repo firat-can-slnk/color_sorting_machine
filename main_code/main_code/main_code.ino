@@ -11,8 +11,8 @@ int color_values[3]; // Gemessene Werte
 int color_steps[4] = {1,2,3,4}; // Schritte Rot, Gruen, Blau, Gold
 
 // PIN BELEGUNGEN
-const byte motor1_pins[4] = {7, 5, 8, 6}; // PINS ÜBERPRÜFEN (Wegen Dreher)
-const byte motor2_pins[4] = {11, 9, 12, 10}; // PINS ÜBERPRÜFEN (Wegen Dreher)
+const byte motor1_pins[4] = {7, 5, 8, 6}; // PINS ÜBERPRÜFEN (Wegen Kabeltausch)
+const byte motor2_pins[4] = {11, 9, 12, 10}; // PINS ÜBERPRÜFEN (Wegen Kabeltausch)
 byte motorpins[4];
 
 const byte leds[3] = {4,3,2}; // Red, Green, Blue
@@ -35,11 +35,7 @@ void loop() {
 
 
 int color_recognition(){
-/*
-  7. Wenn ROT im Bereich A-B, BLAU im Bereich C-D und GRÜN im Bereich E-F
-    dann:
-    (Rot 1, Blau 0, grün 0) Rote Kugel -> gibt positionswert zurück */
-
+  
   for(int i = 0; i<3; i++){
     digitalWrite(leds[i], HIGH);
     delay(500);
@@ -69,8 +65,6 @@ int color_recognition(){
 }
 
 
-
-
 void motorcontrol(String _motor, int _position){
   
   if(_motor == "M1"){
@@ -82,12 +76,13 @@ void motorcontrol(String _motor, int _position){
       motorpins[i] = motor2_pins[i];
   }
   
-  for(int i = 0; i < _position; i++)
+  for(int i = 0; i < _position; i++){
     for(int x = 0; x < 4; x++){
       digitalWrite(motorpins[0], motor[x] & 0b00000001);
       digitalWrite(motorpins[1], motor[x] & 0b00000010);
       digitalWrite(motorpins[2], motor[x] & 0b00000100);
       digitalWrite(motorpins[3], motor[x] & 0b00001000);
-      delay(2);
       }
+      delay(2);
+  }
 }
