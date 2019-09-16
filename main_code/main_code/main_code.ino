@@ -6,8 +6,20 @@
  */
 
 const int motor[4] = {0b00000101, 0b00001001, 0b00001010, 0b00000110};
-const int motor1_pins[4] = { hier l1,l2,l3,l4 eintragen};
-const int motor2_pins[4] = { hier l1,l2,l3,l4 eintragen};
+const int min_values[3] = {1,2,3}; // Minimalster Wert, um als Farbe erkannt zu werden
+int color_values[3]; // Gemessene Werte
+int color_steps[4] = {1,2,3,4}; // Schritte Rot, Gruen, Blau, Gold
+
+// PIN BELEGUNGEN
+const byte motor1_pins[4] = {7, 5, 8, 6}; // PINS ÜBERPRÜFEN (Wegen Dreher)
+const byte motor2_pins[4] = {11, 9, 12, 10}; // PINS ÜBERPRÜFEN (Wegen Dreher)
+byte motorpins[4];
+
+const byte leds[3] = {4,3,2}; // Red, Green, Blue
+
+const byte light_barrier1 = A1; // upper light barrier
+const byte light_barrier2 = A0; // lower light barrier
+const byte color_sensor = A2; // sensor for color recognition
 
 
 
@@ -23,21 +35,43 @@ void loop() {
 
 
 int color_recognition(){
-  1. ROT SENDEN
-  2. Wert auslesen
-  3. GRÜN SENDEN
-  4. Wert auslesen
-  5. BLAU SENDEN
-  6. Wert auslesen
+/*
   7. Wenn ROT im Bereich A-B, BLAU im Bereich C-D und GRÜN im Bereich E-F
     dann:
-    (Rot 1, Blau 0, grün 0) Rote Kugel -> gibt positionswert zurück
+    (Rot 1, Blau 0, grün 0) Rote Kugel -> gibt positionswert zurück */
+
+  for(int i = 0; i<3; i++){
+    digitalWrite(leds[i], HIGH);
+    delay(500);
+    color_values[i] = analogRead(color_sensor);
+    delay(500);
+    digitalWrite(leds[i], LOW);
+  }
+
+  // If color red gets recognized
+  if(color_values[0] >= min_values[0] || color_values[1] < min_values[1] || color_values[2] < min_values[2]){
+    return color_steps[0];
+  }
+  // If color green gets recognized
+  else if(color_values[0] < min_values[0] || color_values[1] >= min_values[1] || color_values[2] < min_values[2]){
+    return color_steps[1];
+  }
+  // If color blue gets recognized
+  else if(color_values[0] < min_values[0] || color_values[1] < min_values[1] || color_values[2] >= min_values[2]){
+    return color_steps[2];
+  }
+  // If all colors are recognized
+  else if(color_values[0] >= min_values[0] || color_values[1] >= min_values[1] || color_values[2] >= min_values[2]){
+    return color_steps[2];
+  }
+  // If no color gets recognized (maybe error)
+  else return 0;
 }
 
 
 
 
-void motorcontrol(_motor, _position){
+void motorcontrol(String _motor, int _position){
   
   if(_motor == "M1"){
     for(int i = 0; i<4; i++)
@@ -50,9 +84,10 @@ void motorcontrol(_motor, _position){
   
   for(int i = 0; i < _position; i++)
     for(int x = 0; x < 4; x++){
-      digitalWrite(M2[0], motor[x] & 0b00000001);
-      digitalWrite(M2[1], motor[x] & 0b00000010);
-      digitalWrite(M2[2], motor[x] & 0b00000100);
-      digitalWrite(M2[3], motor[x] & 0b00001000);
+      digitalWrite(motorpins[0], motor[x] & 0b00000001);
+      digitalWrite(motorpins[1], motor[x] & 0b00000010);
+      digitalWrite(motorpins[2], motor[x] & 0b00000100);
+      digitalWrite(motorpins[3], motor[x] & 0b00001000);
+      delay(2);
       }
 }
