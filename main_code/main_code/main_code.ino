@@ -43,7 +43,7 @@ void setup() {
 void loop() { // M2 zu position_start -> Beachten: Kugel kann durchfallen, vielleicht muss man extra andere Methode machen (ggn. UZS)
   motorcontrol(M1, position_start);
   delay(500); // Zeit damit die Kugel reinfallen kann
-  motorcontrol(M1, position_color_recognition);
+  motorcontrol(M1, position_color_recognition); 
   position_color = color_recognition(); // mit position_start wird die variable überflüssig 
   motorcontrol(M2, position_color);
   motorcontrol(M1, position_start); // Muss nicht Farbe sein, da wir vorbei fahren können
