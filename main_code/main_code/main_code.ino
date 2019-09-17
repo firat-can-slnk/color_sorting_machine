@@ -40,14 +40,15 @@ void setup() {
     pinMode(i, OUTPUT);
 }
 
-void loop() { // M2 zu position_start -> Beachten: Kugel kann durchfallen, vielleicht muss man extra andere Methode machen (ggn. UZS)
+void loop() {
+  motorcontrol(M2, color_steps[3]);
   motorcontrol(M1, position_start);
-  delay(500); // Zeit damit die Kugel reinfallen kann
+  delay(500); // Kugel reinfallen lassen
   motorcontrol(M1, position_color_recognition); 
-  position_color = color_recognition(); // mit position_start wird die variable überflüssig 
+  position_color = color_recognition();
   motorcontrol(M2, position_color);
-  motorcontrol(M1, position_start); // Muss nicht Farbe sein, da wir vorbei fahren können
-  delay(500); // Kugel rausfallen lassen
+  motorcontrol(M1, position_color);
+  motorcontrol(M2, position_start); 
 }
 
 int color_recognition(){
@@ -74,7 +75,7 @@ int color_recognition(){
   }
   // If all colors are recognized
   else if(color_values[0] >= min_values[0] || color_values[1] >= min_values[1] || color_values[2] >= min_values[2]){
-    return color_steps[2];
+    return color_steps[3];
   }
   // If no color gets recognized (maybe error)
   else return 0;
@@ -94,7 +95,7 @@ void motorcontrol(String _motor, int _position){
       active_light_barrier = light_barrier2;
   }
 
-  if(_position == -10)
+  if(_position == position_start)
     while(analogRead(active_light_barrier) <= 1){        // HIER WERT FINDEN, LICHTSCHRANKE
       move_motor();
     }
