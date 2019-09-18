@@ -53,7 +53,7 @@ void loop() {
   position_color = color_recognition();
   motorcontrol("M2", one_step * color_steps[position_color][1]);
   motorcontrol("M1", one_step * color_steps[position_color][0]);
-  motorcontrol("M2", position_start); 
+  motorcontrol("M2", position_start);
 }
 
 int color_recognition(){
