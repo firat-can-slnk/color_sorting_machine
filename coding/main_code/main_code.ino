@@ -92,7 +92,7 @@ void motorcontrol(String _motor, int _position){
   if(_motor == "M1"){
     for(int i = 0; i<4; i++)
       active_motorpins[i] = motor1_pins[i];
-      active_light_barrier = light_barrier2;
+    active_light_barrier = light_barrier2;
   }
   else if(_motor == "M2"){
     for(int i = 0; i<4; i++)
