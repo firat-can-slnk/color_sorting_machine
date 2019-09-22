@@ -105,9 +105,9 @@ void motorcontrol(String _motor, int _position){
       move_motor();
     }
   else
-  for(int i = 0; i < _position; i++){
+  for(int i = 0; i < _position; i++)
     move_motor();
-  }
+  
 }
 
 void move_motor(){
