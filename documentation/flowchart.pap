@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<FRAME GUID="2FB25471-B62C-4EE6-BD43-F819C095ACF8" FORMAT="0000" APP_VERSION="2.2.0.8" CHECKSUM="1517704C5E37066E">
-  <PROJECT FORMAT="1.00" NAME="color_sorting_machine" AUTHOR="Kamm, Krieger, Gläß" CREATED="2019.09.12 19:25:07" MODIFIED="2019.09.22 21:46:06">
+<FRAME GUID="2FB25471-B62C-4EE6-BD43-F819C095ACF8" FORMAT="0000" APP_VERSION="2.2.0.8" CHECKSUM="A1EA9EFD619FDD11">
+  <PROJECT FORMAT="1.00" NAME="color_sorting_machine" AUTHOR="Kamm, Krieger, Gläß" CREATED="2019.09.12 19:25:07" MODIFIED="2019.09.25 10:12:26">
     <DIAGRAMS>
       <DIAGRAM FORMAT="1.00" ID="0" NAME="main" CREATED="2019.09.12 19:25:29" MODIFIED="2019.09.22 21:41:33">
         <LAYOUT FORMAT="1.00" COLUMNS="2" ROWS="11">
@@ -272,7 +272,7 @@
           <CONNECTION FORMAT="1.00" ID="74" FROM="70" TO="72" TEXT="" />
         </CONNECTIONS>
       </DIAGRAM>
-      <DIAGRAM FORMAT="1.00" ID="2" NAME="Farbe erkennen" CREATED="2019.09.22 21:31:55" MODIFIED="2019.09.22 21:46:06">
+      <DIAGRAM FORMAT="1.00" ID="2" NAME="Farbe erkennen" CREATED="2019.09.22 21:31:55" MODIFIED="2019.09.25 10:12:26">
         <LAYOUT FORMAT="1.00" COLUMNS="2" ROWS="10">
           <ENTRIES>
             <ENTRY COLUMN="0" ROW="0" ANCHOR="True">
@@ -292,7 +292,7 @@
             </ENTRY>
             <ENTRY COLUMN="0" ROW="3">
               <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="8">
-                <TEXT><![CDATA[LED i anschalten]]></TEXT>
+                <TEXT><![CDATA[LED[i] anschalten]]></TEXT>
               </FIGURE>
             </ENTRY>
             <ENTRY COLUMN="0" ROW="4">
