@@ -15,7 +15,7 @@ const int min_values[3] = {1,2,3}; // R,G,B  Minimalster Wert, um als Farbe erka
 const int one_step = 1; // HIER WERT FÜR EINE POSITION EINGEBEN
 const int position_start = -1;
 
-const int color_steps[4][2]= { {1,3} , {2,2} , {3,1} , {4,0} }; 
+const int color_steps[4][2]= { {1,3} , {2,2} , {3,1} , {4,0} };
 // Anzahl Positionen, die ein Motor von seiner Position braucht: M1, M2  | ROT, GRUEN, BLAU, GOLD
 
 // pins
@@ -49,7 +49,7 @@ void loop() {
   motorcontrol("M2", one_step); // Von Start zu Gold
   motorcontrol("M1", position_start);
   delay(500); // Kugel reinfallen lassen
-  motorcontrol("M1", one_step); 
+  motorcontrol("M1", one_step);
   position_color = color_recognition();
   motorcontrol("M2", one_step * color_steps[position_color][1]);
   motorcontrol("M1", one_step * color_steps[position_color][0]);
@@ -57,7 +57,7 @@ void loop() {
 }
 
 int color_recognition(){
-  
+
   for(int i = 0; i<3; i++){
     digitalWrite(leds[i], HIGH);
     delay(500);
@@ -88,7 +88,7 @@ int color_recognition(){
 
 
 void motorcontrol(String _motor, int _position){
-  
+
   if(_motor == "M1"){
     for(int i = 0; i<4; i++)
       active_motorpins[i] = motor1_pins[i];
@@ -107,7 +107,7 @@ void motorcontrol(String _motor, int _position){
   else
   for(int i = 0; i < _position; i++)
     move_motor();
-  
+
 }
 
 void move_motor(){
