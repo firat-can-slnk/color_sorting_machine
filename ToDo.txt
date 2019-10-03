@@ -3,7 +3,7 @@ RS.KRIEGER-BLOG.DE
 - Blogartikel (Was hat mir das Projekt gebracht -> GitHub Umgang | Blender | Vegas Pro | Photoshop)
 
 ANDERE DATEIEN:
-- Gantt Diagramm aktualisieren
+- Gantt Diagramm auf "IST" Stand bringen
 
 
 DOKUMENTATION:
