@@ -9,7 +9,7 @@ ANDERE DATEIEN:
 DOKUMENTATION:
 - Warum Github? hinzufügen
 - Erwähnung rs.k-b.de hinzufügen
-- GANTT Einfügen (Soll Ist)
+- GanttDiagramm (IST ergänzen)
 
 
 
