@@ -1,13 +1,8 @@
-RS.KRIEGER-BLOG.DE
-- Blender Dateien auf rs.krieger-blog.de zur Verfügung stellen
-- Blogartikel (Was hat mir das Projekt gebracht -> GitHub Umgang | Blender | Vegas Pro | Photoshop)
-
 ANDERE DATEIEN:
 - Gantt Diagramm auf "IST" Stand bringen
 
 
 DOKUMENTATION:
-- Warum Github? hinzufügen
 - Erwähnung rs.k-b.de hinzufügen
 - GanttDiagramm (IST ergänzen)
 
