@@ -1,11 +1,3 @@
-ANDERE DATEIEN:
-- Gantt Diagramm auf "IST" Stand bringen
-
-
 DOKUMENTATION:
 - Erwähnung rs.k-b.de hinzufügen
-- GanttDiagramm (IST ergänzen)
-
-
-
 - Aus der Word Doku eine druckbare Version erstellen (links mit QR Codes?)

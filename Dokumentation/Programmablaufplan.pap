@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<FRAME GUID="2FB25471-B62C-4EE6-BD43-F819C095ACF8" FORMAT="0000" APP_VERSION="2.2.0.8" CHECKSUM="6211845B408F2CF9">
-  <PROJECT FORMAT="1.00" NAME="color_sorting_machine" AUTHOR="Kamm, Krieger, Gläß" CREATED="2019.09.12 19:25:07" MODIFIED="2019.10.02 23:30:26">
+<FRAME GUID="2FB25471-B62C-4EE6-BD43-F819C095ACF8" FORMAT="0000" APP_VERSION="2.2.0.8" CHECKSUM="350E399BBCA69C1E">
+  <PROJECT FORMAT="1.00" NAME="color_sorting_machine" AUTHOR="Kamm, Krieger, Gläß" CREATED="2019.09.12 19:25:07" MODIFIED="2019.10.05 22:36:44">
     <DIAGRAMS>
-      <DIAGRAM FORMAT="1.00" ID="0" NAME="main" CREATED="2019.09.12 19:25:29" MODIFIED="2019.10.02 23:30:26">
-        <LAYOUT FORMAT="1.00" COLUMNS="3" ROWS="12">
+      <DIAGRAM FORMAT="1.00" ID="0" NAME="main" CREATED="2019.09.12 19:25:29" MODIFIED="2019.10.05 22:25:51">
+        <LAYOUT FORMAT="1.00" COLUMNS="2" ROWS="14">
           <ENTRIES>
             <ENTRY COLUMN="0" ROW="0" ANCHOR="True">
               <FIGURE SUBTYPE="PapTitle" FORMAT="1.00" ID="0">
@@ -17,125 +17,95 @@
             </ENTRY>
             <ENTRY COLUMN="0" ROW="2">
               <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="35">
-                <TEXT><![CDATA[Initialisierung]]></TEXT>
+                <TEXT><![CDATA[Initialisierung: Variablen deklarieren, Pins konfigurieren]]></TEXT>
               </FIGURE>
             </ENTRY>
             <ENTRY COLUMN="0" ROW="3">
+              <FIGURE SUBTYPE="PapLoopStart" FORMAT="1.00" ID="37" ASSOCIATE="39">
+                <TEXT><![CDATA[LOOP]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="4">
               <FIGURE SUBTYPE="PapModule" FORMAT="1.00" ID="4">
                 <TEXT><![CDATA[Motor bewegen]]></TEXT>
               </FIGURE>
             </ENTRY>
-            <ENTRY COLUMN="0" ROW="4">
+            <ENTRY COLUMN="0" ROW="5">
               <FIGURE SUBTYPE="PapModule" FORMAT="1.00" ID="6">
                 <TEXT><![CDATA[Motor bewegen]]></TEXT>
               </FIGURE>
             </ENTRY>
-            <ENTRY COLUMN="0" ROW="5">
+            <ENTRY COLUMN="0" ROW="6">
               <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="16">
                 <TEXT><![CDATA[0,5 Sek. warten]]></TEXT>
               </FIGURE>
             </ENTRY>
-            <ENTRY COLUMN="0" ROW="6">
+            <ENTRY COLUMN="0" ROW="7">
               <FIGURE SUBTYPE="PapModule" FORMAT="1.00" ID="8">
                 <TEXT><![CDATA[Motor bewegen]]></TEXT>
               </FIGURE>
             </ENTRY>
-            <ENTRY COLUMN="0" ROW="7">
+            <ENTRY COLUMN="0" ROW="8">
               <FIGURE SUBTYPE="PapModule" FORMAT="1.00" ID="25">
                 <TEXT><![CDATA[Farbe erkennen]]></TEXT>
               </FIGURE>
             </ENTRY>
-            <ENTRY COLUMN="0" ROW="8">
+            <ENTRY COLUMN="0" ROW="9">
               <FIGURE SUBTYPE="PapModule" FORMAT="1.00" ID="10">
                 <TEXT><![CDATA[Motor bewegen]]></TEXT>
               </FIGURE>
             </ENTRY>
-            <ENTRY COLUMN="0" ROW="9">
+            <ENTRY COLUMN="0" ROW="10">
               <FIGURE SUBTYPE="PapModule" FORMAT="1.00" ID="12">
                 <TEXT><![CDATA[Motor bewegen]]></TEXT>
               </FIGURE>
             </ENTRY>
-            <ENTRY COLUMN="0" ROW="10">
+            <ENTRY COLUMN="0" ROW="11">
               <FIGURE SUBTYPE="PapModule" FORMAT="1.00" ID="14">
                 <TEXT><![CDATA[Motor bewegen]]></TEXT>
               </FIGURE>
             </ENTRY>
-            <ENTRY COLUMN="0" ROW="11">
+            <ENTRY COLUMN="0" ROW="12">
+              <FIGURE SUBTYPE="PapLoopEnd" FORMAT="1.00" ID="39" ASSOCIATE="37">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="13">
               <FIGURE SUBTYPE="PapEnd" FORMAT="1.00" ID="2">
                 <TEXT><![CDATA[Ende]]></TEXT>
               </FIGURE>
             </ENTRY>
-            <ENTRY COLUMN="1" ROW="3">
-              <FIGURE SUBTYPE="PapComment" FORMAT="1.00" ID="27">
-                <TEXT><![CDATA[1]]></TEXT>
-              </FIGURE>
-            </ENTRY>
             <ENTRY COLUMN="1" ROW="4">
-              <FIGURE SUBTYPE="PapComment" FORMAT="1.00" ID="28">
-                <TEXT><![CDATA[2]]></TEXT>
-              </FIGURE>
-            </ENTRY>
-            <ENTRY COLUMN="1" ROW="5">
-              <FIGURE SUBTYPE="PapComment" FORMAT="1.00" ID="29">
-                <TEXT><![CDATA[3]]></TEXT>
-              </FIGURE>
-            </ENTRY>
-            <ENTRY COLUMN="1" ROW="6">
-              <FIGURE SUBTYPE="PapComment" FORMAT="1.00" ID="30">
-                <TEXT><![CDATA[4]]></TEXT>
-              </FIGURE>
-            </ENTRY>
-            <ENTRY COLUMN="1" ROW="7">
-              <FIGURE SUBTYPE="PapComment" FORMAT="1.00" ID="31">
-                <TEXT><![CDATA[5]]></TEXT>
-              </FIGURE>
-            </ENTRY>
-            <ENTRY COLUMN="1" ROW="8">
-              <FIGURE SUBTYPE="PapComment" FORMAT="1.00" ID="32">
-                <TEXT><![CDATA[6]]></TEXT>
-              </FIGURE>
-            </ENTRY>
-            <ENTRY COLUMN="1" ROW="9">
-              <FIGURE SUBTYPE="PapComment" FORMAT="1.00" ID="33">
-                <TEXT><![CDATA[7]]></TEXT>
-              </FIGURE>
-            </ENTRY>
-            <ENTRY COLUMN="1" ROW="10">
-              <FIGURE SUBTYPE="PapComment" FORMAT="1.00" ID="34">
-                <TEXT><![CDATA[8]]></TEXT>
-              </FIGURE>
-            </ENTRY>
-            <ENTRY COLUMN="2" ROW="3">
               <FIGURE SUBTYPE="PapComment" FORMAT="1.00" ID="18">
                 <TEXT><![CDATA[M2, Position Gold]]></TEXT>
               </FIGURE>
             </ENTRY>
-            <ENTRY COLUMN="2" ROW="4">
+            <ENTRY COLUMN="1" ROW="5">
               <FIGURE SUBTYPE="PapComment" FORMAT="1.00" ID="19">
                 <TEXT><![CDATA[M1, Position Start]]></TEXT>
               </FIGURE>
             </ENTRY>
-            <ENTRY COLUMN="2" ROW="5">
+            <ENTRY COLUMN="1" ROW="6">
               <FIGURE SUBTYPE="PapComment" FORMAT="1.00" ID="20">
                 <TEXT><![CDATA[Kugel reinfallen lassen]]></TEXT>
               </FIGURE>
             </ENTRY>
-            <ENTRY COLUMN="2" ROW="6">
+            <ENTRY COLUMN="1" ROW="7">
               <FIGURE SUBTYPE="PapComment" FORMAT="1.00" ID="21">
                 <TEXT><![CDATA[M1, Position Farberkennung]]></TEXT>
               </FIGURE>
             </ENTRY>
-            <ENTRY COLUMN="2" ROW="8">
+            <ENTRY COLUMN="1" ROW="9">
               <FIGURE SUBTYPE="PapComment" FORMAT="1.00" ID="22">
                 <TEXT><![CDATA[M2, Erkannte Farbe]]></TEXT>
               </FIGURE>
             </ENTRY>
-            <ENTRY COLUMN="2" ROW="9">
+            <ENTRY COLUMN="1" ROW="10">
               <FIGURE SUBTYPE="PapComment" FORMAT="1.00" ID="23">
                 <TEXT><![CDATA[M1, Erkannte Farbe]]></TEXT>
               </FIGURE>
             </ENTRY>
-            <ENTRY COLUMN="2" ROW="10">
+            <ENTRY COLUMN="1" ROW="11">
               <FIGURE SUBTYPE="PapComment" FORMAT="1.00" ID="24">
                 <TEXT><![CDATA[M2, Position Start]]></TEXT>
               </FIGURE>
@@ -143,19 +113,21 @@
           </ENTRIES>
         </LAYOUT>
         <CONNECTIONS>
-          <CONNECTION FORMAT="1.00" ID="3" FROM="1" TO="35" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="42" FROM="35" TO="37" TEXT="" />
           <CONNECTION FORMAT="1.00" ID="5" FROM="4" TO="6" TEXT="" />
           <CONNECTION FORMAT="1.00" ID="7" FROM="6" TO="16" TEXT="" />
           <CONNECTION FORMAT="1.00" ID="9" FROM="8" TO="25" TEXT="" />
           <CONNECTION FORMAT="1.00" ID="11" FROM="10" TO="12" TEXT="" />
           <CONNECTION FORMAT="1.00" ID="13" FROM="12" TO="14" TEXT="" />
-          <CONNECTION FORMAT="1.00" ID="15" FROM="14" TO="2" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="41" FROM="39" TO="2" TEXT="" />
           <CONNECTION FORMAT="1.00" ID="17" FROM="16" TO="8" TEXT="" />
           <CONNECTION FORMAT="1.00" ID="26" FROM="25" TO="10" TEXT="" />
-          <CONNECTION FORMAT="1.00" ID="36" FROM="35" TO="4" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="3" FROM="1" TO="35" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="15" FROM="14" TO="39" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="38" FROM="37" TO="4" TEXT="" />
         </CONNECTIONS>
       </DIAGRAM>
-      <DIAGRAM FORMAT="1.00" ID="1" NAME="Motor bewegen" CREATED="2019.09.22 21:29:34" MODIFIED="2019.09.22 21:29:34">
+      <DIAGRAM FORMAT="1.00" ID="1" NAME="Motor bewegen" CREATED="2019.09.22 21:29:34" MODIFIED="2019.10.05 22:20:57">
         <LAYOUT FORMAT="1.00" COLUMNS="3" ROWS="14">
           <ENTRIES>
             <ENTRY COLUMN="0" ROW="0" ANCHOR="True">
@@ -205,7 +177,7 @@
             </ENTRY>
             <ENTRY COLUMN="0" ROW="9">
               <FIGURE SUBTYPE="PapLoopStart" FORMAT="1.00" ID="58" ASSOCIATE="60">
-                <TEXT><![CDATA[while: Aktive LS = gesperrt]]></TEXT>
+                <TEXT><![CDATA[while: Aktive Lichtschranke gesperrt]]></TEXT>
               </FIGURE>
             </ENTRY>
             <ENTRY COLUMN="0" ROW="10">
@@ -318,8 +290,8 @@
           <CONNECTION FORMAT="1.00" ID="74" FROM="70" TO="72" TEXT="" />
         </CONNECTIONS>
       </DIAGRAM>
-      <DIAGRAM FORMAT="1.00" ID="2" NAME="Farbe erkennen" CREATED="2019.09.22 21:31:55" MODIFIED="2019.09.25 10:12:26">
-        <LAYOUT FORMAT="1.00" COLUMNS="2" ROWS="10">
+      <DIAGRAM FORMAT="1.00" ID="2" NAME="Farbe erkennen" CREATED="2019.09.22 21:31:55" MODIFIED="2019.10.05 22:36:44">
+        <LAYOUT FORMAT="1.00" COLUMNS="2" ROWS="14">
           <ENTRIES>
             <ENTRY COLUMN="0" ROW="0" ANCHOR="True">
               <FIGURE SUBTYPE="PapTitle" FORMAT="1.00" ID="0">
@@ -333,7 +305,8 @@
             </ENTRY>
             <ENTRY COLUMN="0" ROW="2">
               <FIGURE SUBTYPE="PapLoopStart" FORMAT="1.00" ID="4" ASSOCIATE="6">
-                <TEXT><![CDATA[for: i = 0; i < 3; i++]]></TEXT>
+                <TEXT><![CDATA[for: 4x ausführen
+ i = 0; i < 3; i++]]></TEXT>
               </FIGURE>
             </ENTRY>
             <ENTRY COLUMN="0" ROW="3">
@@ -358,7 +331,7 @@
             </ENTRY>
             <ENTRY COLUMN="0" ROW="7">
               <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="14">
-                <TEXT><![CDATA[LED i ausschalten]]></TEXT>
+                <TEXT><![CDATA[LED[i] ausschalten]]></TEXT>
               </FIGURE>
             </ENTRY>
             <ENTRY COLUMN="0" ROW="8">
@@ -367,6 +340,26 @@
               </FIGURE>
             </ENTRY>
             <ENTRY COLUMN="0" ROW="9">
+              <FIGURE SUBTYPE="PapCondition" FORMAT="1.00" ID="19">
+                <TEXT><![CDATA[Kugelfarbe: Rot?]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="10">
+              <FIGURE SUBTYPE="PapCondition" FORMAT="1.00" ID="21">
+                <TEXT><![CDATA[Kugelfarbe: Grün?]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="11">
+              <FIGURE SUBTYPE="PapCondition" FORMAT="1.00" ID="23">
+                <TEXT><![CDATA[Kugelfarbe: Blau?]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="12">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="25">
+                <TEXT><![CDATA[Rückgabe: Fehlercode]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="13">
               <FIGURE SUBTYPE="PapEnd" FORMAT="1.00" ID="2">
                 <TEXT><![CDATA[Ende]]></TEXT>
               </FIGURE>
@@ -378,17 +371,39 @@ LED 1: Grün
 LED 2: Blau]]></TEXT>
               </FIGURE>
             </ENTRY>
+            <ENTRY COLUMN="1" ROW="9">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="27">
+                <TEXT><![CDATA[Rückgabe: Farbe Rot]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="10">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="28">
+                <TEXT><![CDATA[Rückgabe: Farbe Grün]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="11">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="29">
+                <TEXT><![CDATA[Rückgabe: Farbe Blau]]></TEXT>
+              </FIGURE>
+            </ENTRY>
           </ENTRIES>
         </LAYOUT>
         <CONNECTIONS>
           <CONNECTION FORMAT="1.00" ID="3" FROM="1" TO="4" TEXT="" />
-          <CONNECTION FORMAT="1.00" ID="7" FROM="6" TO="2" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="7" FROM="6" TO="19" TEXT="" />
           <CONNECTION FORMAT="1.00" ID="5" FROM="4" TO="8" TEXT="" />
           <CONNECTION FORMAT="1.00" ID="9" FROM="8" TO="10" TEXT="" />
           <CONNECTION FORMAT="1.00" ID="11" FROM="10" TO="12" TEXT="" />
           <CONNECTION FORMAT="1.00" ID="13" FROM="12" TO="17" TEXT="" />
           <CONNECTION FORMAT="1.00" ID="15" FROM="14" TO="6" TEXT="" />
           <CONNECTION FORMAT="1.00" ID="18" FROM="17" TO="14" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="20" FROM="19" TO="21" TEXT="nein" />
+          <CONNECTION FORMAT="1.00" ID="22" FROM="21" TO="23" TEXT="nein" />
+          <CONNECTION FORMAT="1.00" ID="24" FROM="23" TO="25" TEXT="nein" />
+          <CONNECTION FORMAT="1.00" ID="26" FROM="25" TO="2" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="30" FROM="23" TO="29" TEXT="ja" />
+          <CONNECTION FORMAT="1.00" ID="31" FROM="21" TO="28" TEXT="ja" />
+          <CONNECTION FORMAT="1.00" ID="32" FROM="19" TO="27" TEXT="ja" />
         </CONNECTIONS>
       </DIAGRAM>
       <DIAGRAM FORMAT="1.00" ID="3" NAME="Motor steuern" CREATED="2019.09.22 21:39:51" MODIFIED="2019.09.22 21:45:24">

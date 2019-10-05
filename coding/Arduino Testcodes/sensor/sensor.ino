@@ -1,14 +1,14 @@
-byte color = 5;
-byte sensor = 3;
+const byte led = 5; //Pin
+const byte sensor = 3; //Pin
 
 void setup() {
-  pinMode(color, OUTPUT);
+  pinMode(led, OUTPUT);
   pinMode(sensor, OUTPUT);
-  Serial.begin(9600);
-  digitalWrite(color, HIGH);
+  Serial.begin(9600); //starting the serial monitor
+  digitalWrite(led, HIGH); //led is on all the time
 
 }
 
 void loop() {
-  Serial.println(analogRead(sensor));
+  Serial.println(analogRead(sensor)); //reads the sensor values
 }
