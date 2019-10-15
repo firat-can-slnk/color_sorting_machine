@@ -1,3 +1,0 @@
-DOKUMENTATION:
-- Erwähnung rs.k-b.de hinzufügen
-- Aus der Word Doku eine druckbare Version erstellen (links mit QR Codes?)
