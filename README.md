@@ -1,47 +1,34 @@
-# Color_Sorting_Machine
+# Vorwort
 
-The color sorting machine is used to sort chocolate balls by their package color.
+Die Farbsortiermaschine ist ein Arduino Projekt, welches wir im Rahmen eines schulischen Projekts gemacht haben.
 
-## Getting Started
+## Was ist in diesem Repository?
 
-The following instructions will help you to understand the files in this repository and how to use the code.
+Im folgenden gibt es eine Übersicht von allen Verzeichnissen und Dateien, welche in diesem Projekt eingebunden sind.
 
-### Prerequisites
+### Verzeichnis: Dokumentation
 
-To get the project working for yourself, you need an Arduino compiler and uploader. We recommend the "Arduino" IDE.
+In diesem Verzeichnis befinden sich alle Dateien, welche von den Projektanforderungen gefordert wurde.
+Dazu gehören:
+- Dokumentation (als Word-Datei)
+- Gantt-Diagramm (als ProjectLibre-Datei)
+- Pflichtenheft (als Word-Datei)
+- Programmablaufplan (als PapDesigner-Datei)
+- Schaltplan (als Fritzing-Datei)
+
+Desweiteren befinden sich die Verzeichnisse "Bilder zur Dokumentation" und "Blender" in dem Verzeichnis "Dokumentation":
+
+Das erste Verzeichnis beinhaltet alle Bilder, welche in der Word Datei der Dokumentation benutzt werden.
+Im Verzeichnis "Blender" befinden sich alle vorhandenen Dateien zu 3D Modellen des Aufbaus. Das sind .MP4, .GIF und .BLEND Dateien.
 
 
-### Installing
+### Verzeichnis: Coding
 
-Download the code, start it with the compiler/uploader of your choice.
+Im gesamten Verzeichnis befinden sich 3 .ino Dateien, welche sich mit jedem Text-Editor öffnen lassen. Diese Dateiendung kommt von der Arduino IDE.
 
-Compile the main file.
+In dem Unterverzeichnis "Arduino Testcodes" befinden sich 2 Dateien, welche die Funktionalität der Elektronik überprüfen soll.
+In dem Unterverzeichnis "main_code" befindet sich der Code, welcher sämtliche Funktionen beinhaltet.
 
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
 
 ### And coding style tests
 
