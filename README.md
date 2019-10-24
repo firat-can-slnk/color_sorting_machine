@@ -48,4 +48,4 @@ Für eine Übersicht unserer benutzer Software, bitte [hier](https://rs.krieger-
 
 ## Lizenz
 
-Das Projekt steht unter der GNU General Public Lizenz, welche [hier](LICENSE.md) eingesehen werden kann.
+Das Projekt steht unter der GNU General Public Lizenz, welche [hier](https://github.com/KriegersBlog/color_sorting_machine/README.md) eingesehen werden kann.
