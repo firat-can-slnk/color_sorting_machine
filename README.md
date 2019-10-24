@@ -1,12 +1,12 @@
 # Vorwort
 
-Die Farbsortiermaschine ist ein Arduino Projekt, welches wir im Rahmen eines schulischen Projekts gemacht haben.
+Die Farbsortiermaschine ist ein Arduino Projekt, welches wir im Rahmen eines schulischen Projekts gemacht haben. Es sortiert Schokokugeln der Farbe nach.
 
-## Was ist in diesem Repository?
+# Was ist in diesem Repository?
 
 Im folgenden gibt es eine Übersicht von allen Verzeichnissen und Dateien, welche in diesem Projekt eingebunden sind.
 
-### Verzeichnis: Dokumentation
+## Verzeichnis: Dokumentation
 
 In diesem Verzeichnis befinden sich alle Dateien, welche von den Projektanforderungen gefordert wurde.
 Dazu gehören:
@@ -22,7 +22,7 @@ Das erste Verzeichnis beinhaltet alle Bilder, welche in der Word Datei der Dokum
 Im Verzeichnis "Blender" befinden sich alle vorhandenen Dateien zu 3D Modellen des Aufbaus. Das sind .MP4, .GIF und .BLEND Dateien.
 
 
-### Verzeichnis: Coding
+## Verzeichnis: Coding
 
 Im gesamten Verzeichnis befinden sich 3 .ino Dateien, welche sich mit jedem Text-Editor öffnen lassen. Diese Dateiendung kommt von der Arduino IDE.
 
@@ -30,7 +30,7 @@ In dem Unterverzeichnis "Arduino Testcodes" befinden sich 2 Dateien, welche die 
 In dem Unterverzeichnis "main_code" befindet sich der Code, welcher sämtliche Funktionen beinhaltet.
 
 
-### And coding style tests
+# TEST
 
 Explain what these tests test and why
 
