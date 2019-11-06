@@ -1,4 +1,4 @@
-const byte motorpins[4] = {4, 6, 3, 5}; //Pins where the motor is connected to the Arduino
+const byte motorpins[4] = {4, 6, 3, 5}; //Pins where the motor is connected to the Arduino 3,1,4,2
 const int motor[4] = {0b00000101, 0b00001001, 0b00001010, 0b00000110}; 
 
 void setup() {
