@@ -1,8 +1,8 @@
-const byte motorpins[4] = {11, 9, 12, 10}; //Pins where the motor is connected to the Arduino
+const byte motorpins[4] = {4, 6, 3, 5}; //Pins where the motor is connected to the Arduino
 const int motor[4] = {0b00000101, 0b00001001, 0b00001010, 0b00000110}; 
 
 void setup() {
-  for(int i= 9; i<13; i++)
+  for(int i= 3; i<10; i++)
     pinMode(i, OUTPUT);
 }
 
