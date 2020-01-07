@@ -8,44 +8,35 @@ Im folgenden gibt es eine Übersicht von allen Verzeichnissen und Dateien, welch
 
 ## Verzeichnis: Dokumentation
 
+Das Verzeichnis *Dokumentation* ist das Größte. Dies liegt vor allem an den 3D - Modellen und dessen gerenderten Animationen.
+Diese sind im Unterverzeichnis **Blender** zu finden. Dort sind **.MP4, .GIF** und **.BLEND** Dateien vorhanden.
+Die ersten beiden Formate können mit jedem standardmäßigen Image-Viewer geöffnet werden.  
+**.BLEND** Dateien können mit der [3D - Modellierungssoftware Blender](https://www.blender.org/) geöffnet werden.
+
+Im Unterverzeichnis **Bilder zur Dokumentation** sind alle Grafiken vorhanden, 
+welche in der eigentlichen Dokumentation als Word Datei (**.docx**) genutzt werden.
+
 In diesem Verzeichnis befinden sich alle Dateien, welche von den Projektanforderungen gefordert wurde.
 Dazu gehören:
-- Dokumentation (als Word-Datei)
-- Gantt-Diagramm (als ProjectLibre-Datei)
-- Pflichtenheft (als Word-Datei)
-- Programmablaufplan (als PapDesigner-Datei)
-- Schaltplan (als Fritzing-Datei)
-
-Desweiteren befinden sich die Verzeichnisse "Bilder zur Dokumentation" und "Blender" in dem Verzeichnis "Dokumentation":
-
-Das erste Verzeichnis beinhaltet alle Bilder, welche in der Word Datei der Dokumentation benutzt werden.
-Im Verzeichnis "Blender" befinden sich alle vorhandenen Dateien zu 3D Modellen des Aufbaus. Das sind .MP4, .GIF und .BLEND Dateien.
-
+- Dokumentation (als MS Word-Datei)
+- Gantt-Diagramm (als [ProjectLibre-Datei](http://www.projectlibre.de/))
+- Pflichtenheft (als MS Word-Datei)
+- Programmablaufplan (als [PapDesigner-Datei](https://www.heise.de/download/product/papdesigner-51889))
+- Schaltplan (als [Fritzing-Datei](https://fritzing.org/home/))
 
 ## Verzeichnis: Coding
 
-Im gesamten Verzeichnis befinden sich 3 .ino Dateien, welche sich mit jedem Text-Editor öffnen lassen. Diese Dateiendung kommt von der Arduino IDE.
+Im gesamten Verzeichnis befinden sich 3 **.INO** Dateien, welche sich mit jedem Text-Editor öffnen lassen. Diese Dateiendung kommt von der Arduino IDE.
 
-In dem Unterverzeichnis "Arduino Testcodes" befinden sich 2 Dateien, welche die Funktionalität der Elektronik überprüfen soll.
-In dem Unterverzeichnis "main_code" befindet sich der Code, welcher sämtliche Funktionen beinhaltet.
+In dem Unterverzeichnis **Arduino Testcodes** befinden sich 2 Dateien, welche die Funktionalität der Elektronik überprüfen soll.
 
+In dem Unterverzeichnis **main_code** befindet sich der Code, welcher sämtliche Funktionen beinhaltet.
 
-# TEST
+# Benutzte Software
 
-Explain what these tests test and why
+Für eine Übersicht und Erläuterung unserer benutzen Software, 
+bitte [hier](https://rs.krieger-blog.de/Software.html "rs.krieger-blog.de") schauen.
 
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Benutzte Software
-
-Für eine Übersicht unserer benutzer Software, bitte [hier](https://rs.krieger-blog.de/Software.html) schauen.
-
-## Lizenz
+# Lizenz
 
 Das Projekt steht unter der GNU General Public Lizenz, welche [hier](LICENSE) eingesehen werden kann.
