@@ -1,6 +1,6 @@
 # Vorwort
 
-Die Farbsortiermaschine ist ein Arduino Projekt, welches wir im Rahmen eines schulischen Projekts gemacht haben. Es sortiert Schokokugeln der Farbe nach.
+Dieses Projekt stellt ein Teilprojekt unseres Schulprojekts (Automatisierung einer Bonbon - Abfüllanlage) dar. Es dient zur Sortierung verschieden bunt verpackter Schokoladenkugeln. Mithilfe von Sensoren wird die Farbe einer Kugel bestimmt und dementsprechend sortiert. 
 
 # Was ist in diesem Repository?
 
