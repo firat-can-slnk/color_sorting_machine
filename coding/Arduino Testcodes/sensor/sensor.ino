@@ -1,5 +1,5 @@
 const byte led = 5; //Pin
-const byte sensor = 3; //Pin
+const byte sensor = A5; //Pin
 
 void setup() {
   pinMode(led, OUTPUT);
